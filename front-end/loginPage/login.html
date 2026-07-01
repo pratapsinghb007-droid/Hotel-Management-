@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Hotel Management - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hotel Management</h1>
+  <p class="subtitle">Sign in to continue</p>
+
+  <div class="tabs">
+    <div class="tab active" id="loginTab" onclick="showForm('login')">Login</div>
+    <div class="tab" id="registerTab" onclick="showForm('register')">Register</div>
+  </div>
+
+  <!-- LOGIN FORM -->
+  <form id="loginForm" class="active">
+    <label for="loginEmail">Email</label>
+    <input type="email" id="loginEmail" required placeholder="you@example.com">
+
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" required placeholder="••••••••">
+
+    <button type="submit" id="loginBtn">Login</button>
+    <div class="message" id="loginMessage"></div>
+  </form>
+
+  <!-- REGISTER FORM -->
+  <form id="registerForm">
+    <label for="regFirstname">First name</label>
+    <input type="text" id="regFirstname" required placeholder="Bhanu">
+
+    <label for="regLastname">Last name</label>
+    <input type="text" id="regLastname" required placeholder="Pratap">
+
+    <label for="regEmail">Email</label>
+    <input type="email" id="regEmail" required placeholder="you@example.com">
+
+    <label for="regPassword">Password</label>
+    <input type="password" id="regPassword" required placeholder="••••••••">
+
+    <button type="submit" id="registerBtn">Create account</button>
+    <div class="message" id="registerMessage"></div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
